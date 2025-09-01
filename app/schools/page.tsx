@@ -59,14 +59,18 @@ export default function ShowSchools() {
             <header className="bg-blue-600/80 backdrop-blur-sm text-white p-4">
                 <div className="max-w-6xl mx-auto flex justify-between items-center">
                     <h1 className="text-2xl font-bold">🏫 School Directory</h1>
-                    <nav className="space-x-4">
-                        <Link href="/add-school" className="hover:underline font-semibold">
-                            Add School
-                        </Link>
-                        <Link href="/schools" className="hover:underline font-semibold">
-                            Show Schools
-                        </Link>
-                    </nav>
+                        <nav className="flex flex-col space-y-4">
+                            <div className="flex flex-row gap-6">
+                                <Link href="/add-school" className="text-white font-semibold hover:underline flex flex-col items-center">
+                                    <span>Add</span>
+                                    <span>School</span>
+                                </Link>
+                                <Link href="/schools" className="text-white font-semibold hover:underline flex flex-col items-center">
+                                    <span>Show</span>
+                                    <span>Schools</span>
+                                </Link>
+                            </div>
+                        </nav>
                 </div>
             </header>
 

@@ -7,12 +7,18 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">🏫 School Directory</h1>
           <nav className="space-x-4">
-            <Link href="/add-school" className="hover:underline font-semibold">
-              Add School
-            </Link>
-            <Link href="/schools" className="hover:underline font-semibold">
-              Show Schools
-            </Link>
+            <nav className="space-x-4">
+              <div className="flex flex-row gap-6">
+                <a href="/add-school" className="hover:underline font-semibold flex flex-col items-center">
+                  <span>Add</span>
+                  <span>School</span>
+                </a>
+                <a href="/schools" className="hover:underline font-semibold flex flex-col items-center">
+                  <span>Show</span>
+                  <span>Schools</span>
+                </a>
+              </div>
+            </nav>
           </nav>
         </div>
       </header>
