@@ -2,7 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["blob.vercel-storage.com"],
+    domains: [
+      "yeqhhhhm7rpnmvge.public.blob.vercel-storage.com", // <-- add this
+      "blob.vercel-storage.com" // (optional, for other blobs)
+    ],
   },
 };
 
